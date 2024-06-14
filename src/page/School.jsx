@@ -1,7 +1,7 @@
 import { Col, Container, Row, Image, Button } from "react-bootstrap";
 import schoolImage from "../asset/image/School-Image.jpg"
 import Input from "../Component/Input.jsx"
-import { useEffect, useState } from "react";
+import {useState } from "react";
 import axios from "axios";
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from "react-toastify";
@@ -28,8 +28,6 @@ const School = () => {
               console.error('Error:', err);
           });
   }
-        
-
     const handleClick = () => {
         toast("Add your School")
         schoolDetail();
@@ -38,7 +36,7 @@ const School = () => {
     return (
         <Container fluid className="p-0">
             <Row>
-                <Col xs={7} className="p-0">
+                <Col xs={7}  className="p-0">
                     <div >
                         <Image src={schoolImage} fluid />
                     </div>
